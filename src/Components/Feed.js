@@ -2,7 +2,6 @@ import { useState } from 'react';
 import React from 'react';
 import Menu from './Menu';
 import Block from './Block';
-import Color from './Color';
 
 const Feed = () => {
     /* TODO: Declare a new state variable to keep track of the blocks on your Blockstagram feed! */
@@ -14,8 +13,8 @@ const Feed = () => {
     
 
     /* Use the map() function to render multiple Blocks! */
-    const posts = blocks.map((block, i) => {
-        return <Block key={i} color={block} />;
+    const posts = blocks.map((block) => {
+        return <Block color={block} />;
       });// TODO: edit this variable
 
     return (
