@@ -8,7 +8,7 @@ const Feed = () => {
     // Refer to Hint 2 for more help!
     const[blocks, setBlocks] = useState([]);
     const handleClick = (color) => {
-        setBlocks([...blocks, color]);
+        setBlocks([color, ...blocks]);
       };
     
 
